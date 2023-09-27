@@ -2,6 +2,7 @@ import React from 'react'
 import "./blog.css"
 import { MdKeyboardDoubleArrowRight } from "react-icons/md"
 import img1 from "../../assets/5-YoungExec_AmariRuff-e1557499013944.png"
+import { Link } from 'react-router-dom'
 
 function Blog() {
     const datas = [
@@ -34,7 +35,7 @@ function Blog() {
   )
 }
 
-function Post({image, text}) {
+export function Post({image, text, postId}) {
     return (
         <div className="post">
             <div className="post-img">
@@ -44,8 +45,10 @@ function Post({image, text}) {
             <p>{text}</p>
             </div>
             <div className="read-more">
+                <Link to={`/blog/${postId}`}>
                 <span>Read More</span>
                 <MdKeyboardDoubleArrowRight />
+                </Link>
             </div>
         </div>
     )

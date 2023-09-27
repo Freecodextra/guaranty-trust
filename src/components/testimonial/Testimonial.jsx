@@ -1,4 +1,3 @@
-import React from "react";
 import "./testimonial.css";
 import img1 from "../../assets/images.jpg";
 import { Carousel } from "react-responsive-carousel";

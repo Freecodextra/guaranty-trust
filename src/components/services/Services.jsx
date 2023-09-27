@@ -1,4 +1,3 @@
-import React from 'react'
 import "./services.css"
 import { PiDesktopTowerLight, PiBriefcaseLight } from "react-icons/pi"
 import { TfiVideoClapper } from "react-icons/tfi"
@@ -55,7 +54,7 @@ function Services() {
   )
 }
 
-function Service({icon, head, body}) {
+export function Service({icon, head, body}) {
 
     return (
         <div className="service">

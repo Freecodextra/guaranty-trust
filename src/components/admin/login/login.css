@@ -1,0 +1,85 @@
+:root {
+    --white: #fff;
+    --black: #3c4048;
+    --purple: #6f38c5;
+    --light-purple: #b1b2ff;
+    --background: #eef1ff;
+    --normal-font-size: 1rem;
+    --large-font-size: 1.5rem;
+    --smaller-font-size: 0.65rem;
+    --small-font-size: 0.8rem;
+    --box-shadow:  2px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.login-form {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+#main {
+    width: max-content;
+    margin: 40px auto;
+    font-family: "Segoe UI", sans-serif;
+    padding: 25px 28px;
+    background: var(--white);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    animation: popup 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes popup {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.input-parent {
+    display: block;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #a4a4a4;
+}
+.input-parent input {
+    padding: 10px 8px;
+    width: 100%;
+    font-size: 16px;
+    background: #eaeaea;
+    border: none;
+    color: #c7c7c7;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.input-parent input:hover {
+    background: #eaeaea;
+}
+.input-parent input:focus {
+    box-shadow: 0px 0px 0px 1px var(--purple);
+}
+.mb-3 input, button, textarea, select {
+    box-shadow: none !important;
+  }
+  .mb-3 input:focus, textarea:focus, select:focus {
+    outline: 1px solid var(--purple) !important;
+  }
+.login-btn {
+    padding: 10px 18px;
+    font-size: 15px;
+    background: var(--purple);
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    color: #f4f4f4;
+    transition: all 0.2s ease;
+}
+.login-btn:hover {
+    opacity: 0.7;
+}
+.login-btn:focus {
+    box-shadow: var(--box-shadow);
+}

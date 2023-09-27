@@ -1,4 +1,3 @@
-import React from 'react'
 import "./about.css"
 import asset from "../../assets/asset 15.webp";
 

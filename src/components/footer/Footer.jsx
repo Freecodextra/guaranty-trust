@@ -9,7 +9,7 @@ function Footer() {
         <div className="one">
             <div className='image'>
             <img src={logo} alt="" className="logo" />
-            <span>edensdigital</span>
+            <span>guaranty resources</span>
             </div>
             <p>We are a data-driven, customer-centric web design/development, Branding, and advertisement company</p>
         </div>
@@ -39,14 +39,14 @@ function Footer() {
             <div className="addrs">
             <a href="tel:+2348101690141">+2348101690141</a>
             <div className="emails">
-                <a href="mailto:admin@edensdigital.agency">admin@edensdigital.agency</a>
-                <a href="mailto:edensdigital@gmail.com">edensdigital@gmail.com</a>
+                <a href="mailto:admin@guarantyresoures.agency">admin@guarantyresoures.agency</a>
+                <a href="mailto:guarantyresoures@gmail.com">guarantyresoures@gmail.com</a>
             </div>
             </div>
         </div>
     </footer>
         <div className="copyright">
-            <p>@2022 - GUARANTY RESOURCES. All Rights Reserved.</p>
+            <p>@2022 - GUARANTY TRUST RESOURCES. All Rights Reserved.</p>
         </div>
     </>
   )

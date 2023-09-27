@@ -1,0 +1,16 @@
+
+.service-btn {
+    margin-top: 12px;
+}
+.service-btn button {
+    padding: 8px 15px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+.service-btn button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s ease;
+}

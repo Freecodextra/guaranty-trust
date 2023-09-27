@@ -3,6 +3,7 @@ import Logo from "../../assets/G Logo.png"
 import { RiCustomerService2Fill } from "react-icons/ri"
 import { FcMenu } from "react-icons/fc"
 import { FaTimes } from "react-icons/fa"
+import { NavLink } from "react-router-dom"
 import './top.css'
 
 function Top() {
@@ -18,21 +19,23 @@ function Top() {
     <div className='top'>
         <div className="logo center">
           <FcMenu className='burger hidden' onClick={openNavBar} />
-          <img src={Logo} alt="logo" />
+          <NavLink to="/"><img src={Logo} alt="logo" /></NavLink>
         </div>
         <div className="links-call" ref={navBar}>
           <FaTimes className='cancel hidden' onClick={closeNavBar} />
         <div className="links center">
           <ul ref={navLists}>
             <li className='hidden home'>home</li>
-            <li>portfolio</li>
-            <li>about us</li>
-            <li>blog</li>
+            <li><NavLink to="/portfolio">portfolio</NavLink></li>
+            <li><NavLink to="/about-us">about us</NavLink></li>
+            <li><NavLink to="/blog">blog</NavLink></li>
           </ul>
         </div>
         <div className="call-to-ation">
-          <span>call now</span>
+          <span><a href="tel:+2349016242310">call now</a></span>
+          <a href="https://api.whatsapp.com/send?phone=2349016242310">
           <button className='top-btn'>get started</button>
+          </a>
         </div>
         </div>
           <div className="contact">

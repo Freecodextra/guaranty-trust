@@ -1,7 +1,6 @@
-import React from 'react'
 import "./get-started.css"
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
-import img1 from "../../assets/5-YoungExec_AmariRuff-e1557499013944.png"
+import img1 from "../../assets/asset 6.webp"
 
 function GetStarted() {
   return (
@@ -14,7 +13,9 @@ function GetStarted() {
         <FaYoutube className='icon'/>
         </div>
         <h1>Start your next project with us</h1>
-        <button>get started</button>
+        <a href="https://api.whatsapp.com/send?phone=2349016242310">
+          <button>get started</button>
+          </a>
         <img src={img1} alt="" className='background' />
     </section>
   )
