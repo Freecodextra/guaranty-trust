@@ -31,8 +31,6 @@ function EachPost() {
             post.createdAt ? setDate(postDate.toLocaleDateString()) : setDate((new Date()).toLocaleDateString());
           
         }, [])
-        
-      
   return (
     <>
         <Top />
